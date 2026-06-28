@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Stockly.Application\Stockly.Application.csproj" />
     <ProjectReference Include="..\Stockly.Infrastructure\Stockly.Infrastructure.csproj" />
   </ItemGroup>
 
