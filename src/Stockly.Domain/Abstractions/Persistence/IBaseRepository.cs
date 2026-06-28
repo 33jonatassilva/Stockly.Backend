@@ -1,4 +1,4 @@
-﻿namespace Stockly.Application.Abstractions.Persistence
+﻿namespace Stockly.Domain.Abstractions.Persistence
 {
     public interface IBaseRepository<T> where T : class
     {

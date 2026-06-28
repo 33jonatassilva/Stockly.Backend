@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stockly.Domain.Entities
+﻿namespace Stockly.Domain.Entities
 {
     public class PurchaseItem
     {

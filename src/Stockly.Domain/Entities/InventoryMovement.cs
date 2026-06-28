@@ -9,7 +9,7 @@ namespace Stockly.Domain.Entities
         public MovementType Movement { get; set; }
         public decimal Quantity { get; set; }
         public DateTime MovementDate { get; set; }
-        public Guid PurchaseItemId { get; set; }
+        public Guid? PurchaseItemId { get; set; }
         public string Notes { get; set; }
 
 

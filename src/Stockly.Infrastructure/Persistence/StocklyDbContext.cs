@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 using Stockly.Domain.Entities;
 
 namespace Stockly.Infrastructure.Persistence
@@ -17,5 +18,13 @@ namespace Stockly.Infrastructure.Persistence
         public DbSet<PurchaseItem> PurchaseItems { get; set; }
         public DbSet<ProductVariation> ProductVariations { get; set; }
         public DbSet<InventoryMovement> InventoryMovements { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
     }
 }

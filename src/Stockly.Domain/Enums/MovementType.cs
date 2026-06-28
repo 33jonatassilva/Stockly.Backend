@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stockly.Domain.Enums
+﻿namespace Stockly.Domain.Enums
 {
-    public  enum MovementType
+    public enum MovementType
     {
         Purchase,
         Consumption,

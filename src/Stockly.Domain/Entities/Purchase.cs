@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stockly.Domain.Entities
+﻿namespace Stockly.Domain.Entities
 {
     public class Purchase
     {
@@ -11,5 +7,7 @@ namespace Stockly.Domain.Entities
         public string StoreName { get; set; }
         public decimal TotalValue { get; set; }
         public string Notes { get; set; }
+
+        public ICollection<PurchaseItem> PurchaseItems { get; set; }
     }
 }
