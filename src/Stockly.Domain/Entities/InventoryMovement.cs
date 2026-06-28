@@ -10,10 +10,10 @@ namespace Stockly.Domain.Entities
         public decimal Quantity { get; set; }
         public DateTime MovementDate { get; set; }
         public Guid? PurchaseItemId { get; set; }
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
 
 
-        public ProductVariation ProductVariation { get; set; }
-        public PurchaseItem PurchaseItem { get; set; }
+        public ProductVariation ProductVariation { get; set; } = null!;
+        public PurchaseItem? PurchaseItem { get; set; }
     }
 }

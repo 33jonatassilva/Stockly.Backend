@@ -9,7 +9,7 @@
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }
 
-        public Purchase Purchase { get; set; }
-        public ProductVariation ProductVariation { get; set; }
+        public Purchase Purchase { get; set; } = null!;
+        public ProductVariation ProductVariation { get; set; } = null!;
     }
 }

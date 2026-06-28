@@ -23,8 +23,6 @@ public class ProductVariationConfiguration : IEntityTypeConfiguration<ProductVar
             .IsRequired()
             .HasMaxLength(20);
 
-        builder.Ignore(v => v.Brand);
-
         builder.HasOne(v => v.Product)
             .WithMany(p => p.ProductVariations)
             .HasForeignKey(v => v.ProductId)
